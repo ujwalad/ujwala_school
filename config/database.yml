@@ -1,0 +1,25 @@
+development:
+      host: 127.0.0.1
+      adapter: mysql2
+      database: fedena_ultimate
+      port: 3306
+      username: root
+      password: root
+
+test: &test
+      host: 127.0.0.1
+      adapter: mysql2
+      database: fedena_two_new
+      port: 3306
+      username: root
+      password: root
+
+production:
+      host: 127.0.0.1
+      adapter: mysql2
+      database: fedena_ultimate
+      port: 3306
+      username: root
+      password: root
+cucumber:
+  <<: *test
